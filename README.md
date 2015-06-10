@@ -19,6 +19,21 @@ Move the directory where photos are located. Then execute photo-relocate.rb.
 
     $ photo-relocate.rb
 
+## Customize
+
+Edit following part of photo-relocate.rb directly.
+
+    DIR_FORMAT  = "%F"
+
+This is Date/Time directory format. (Default is %F = %Y-%m-%d. ex. 2015-06-10)
+Format of [Time#strftime](http://ruby-doc.org/core-2.2.0/Time.html#method-i-strftime) is available.
+
+For example,
+
+    DIR_FORMAT  = "%Y%m%d"     -> ex. 20150610
+
+    DIR_FORMAT  = "%y%m"       -> ex. 1506
+
 ## Original Script
 
 - <http://ylgbk.hatenablog.com/entry/2015/05/05/120000>
