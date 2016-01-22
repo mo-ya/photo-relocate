@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # coding: utf-8
 ##
-## Copyright (C) 2015 Y.Morikawa <http://moya-notes.blogspot.jp/>
+## Copyright (C) 2016 Y.Morikawa <http://moya-notes.blogspot.jp/>
 ##
 ## License: MIT License  (See LICENSE.md)
 ##
@@ -10,7 +10,8 @@
 ########################################
 ## Settings
 ########################################
-DIR_FORMAT  = "%F"   # %F = %Y-%m-%d   (* Format of Time#strftime is available)
+DIR_FORMAT  = "%Y%m%d"
+#DIR_FORMAT  = "%F"   # %F = %Y-%m-%d   (* Format of Time#strftime is available)
 
 ########################################
 ## Main
