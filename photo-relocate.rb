@@ -36,13 +36,13 @@ class Dir
           next
         end
 
-        if !( exif.date_time )
+        if !( exif.date_time_original )
           warn "#{file}: Date/Time data not found. Skipped."
           next
         end
 
         # Create the destination directory
-        dst_dir = exif.date_time.strftime(DIR_FORMAT)
+        dst_dir = exif.date_time_original.strftime(DIR_FORMAT)
         FileUtils.mkdir_p dst_dir, {:verbose => false}
         
         # Move photos
